@@ -1,205 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
-
-    <div class="row">
-        <div class="col">
-            <p class="paragraph">Leave from</p>
-            <div class="custom-select">
-                <select>
-                    <option value="germany">Germany</option>
-                </select>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="carousel-wrapper">
+      <div class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+        <div class="carousel-inner">
+          <div class="carousel-text">
+            <h1 class="carousel-title">Book your next trip</h1>
+            <p class="carousel-subtitle">
+              An arrangement you make to have a hotel room, tickets, etc. at a
+              particular time in the future
+            </p>
+          </div>
+          <div class="carousel-item active">
+            <div class="overlay">
+              <img
+                class="img"
+                src="jennifer-stone-qwwGrCJg5y8-unsplash.jpg"
+                alt="First slide"
+              />
             </div>
-            
-        </div>
-        <div class="col">
-            <p class="paragraph">To</p>
-            <div class="custom-select">
-                <select>
-                    <option value="gabon">Gabon</option>
-                </select>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay">
+              <img
+                class="img"
+                src="photo-1542395975-d6d3ddf91d6e.webp"
+                alt="Second slide"
+              />
             </div>
-            
-        </div>
-        <div class="col">
-            <p class="paragraph">Depart</p>
-            <input type="datetime-local" id="Test_DatetimeLocal">
-        </div>
-        <div class="col">
-            <button type="button" class="btn">Search</button>
-        </div>
-    </div>
-
-    <div class="dogs-cards1">
-    <div class="card" style="width: 18rem;">
-        <img src="download.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay">
+              <img
+                class="img"
+                src="photo-1542442828-287217bfb87f.jfif"
+                alt="Third slide"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="dogs-cards2">
-        <div class="card" style="width: 18rem;">
-            <img src="download.jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col">
+          <p class="paragraph">Leave from</p>
+          <div class="custom-select">
+            <select>
+              <option value="germany">Germany</option>
+              <option value="belgium">Belgium</option>
+              <option value="netherlands">Netherlands</option>
+              <option value="luxembourg">Luxembourg</option>
+              <option value="france">France</option>
+            </select>
           </div>
-    
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        </div>
+        <div class="col">
+          <p class="paragraph">To</p>
+          <div class="custom-select">
+            <select>
+              <option value="gabon">Gabon</option>
+              <option value="angola">Angola</option>
+              <option value="mozambique">Mozambique</option>
+              <option value="south-africa">South Africa</option>
+              <option value="sudan">Sudan</option>
+            </select>
           </div>
-    
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        </div>
+        <div class="col">
+          <p class="paragraph">Depart</p>
+          <input
+            type="datetime-local"
+            id="Test_DatetimeLocal"
+            placeholder="Please select date"
+          />
+        </div>
+        <div class="col">
+          <button type="button" class="btn">Search</button>
+        </div>
+      </div>
+
+      <div class="dogs-cards1">
+        <div class="card">
+          <img
+            src="https://picsum.photos/400/300"
+            onmouseover="this.src='images.jfif'"
+            onmouseout="this.src='https://picsum.photos/400/300'"
+            class="card-img-top"
+            width="400px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">From/Night</a>
           </div>
         </div>
 
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-              </li>
-            </ul>
-          </nav>
-    
-          <footer class="bg-light text-center text-lg-start">
-            <div class="container p-4">
-              <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Links</h5>
-          
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#!" class="text-dark">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 2</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 3</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 4</a>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase mb-0">Links</h5>
-          
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#!" class="text-dark">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 2</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 3</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 4</a>
-                    </li>
-                  </ul>
-                </div>
-               
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Links</h5>
-          
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#!" class="text-dark">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 2</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 3</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 4</a>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase mb-0">Links</h5>
-          
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#!" class="text-dark">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 2</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 3</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 4</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://picsum.photos/400/300"
+            onmouseover="this.src='images.jfif'"
+            onmouseout="this.src='https://picsum.photos/400/300'"
+            class="card-img-top"
+            width="400px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">From/Night</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://picsum.photos/400/300"
+            onmouseover="this.src='images.jfif'"
+            onmouseout="this.src='https://picsum.photos/400/300'"
+            class="card-img-top"
+            width="400px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">From/Night</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://picsum.photos/400/300"
+            onmouseover="this.src='images.jfif'"
+            onmouseout="this.src='https://picsum.photos/400/300'"
+            class="card-img-top"
+            width="400px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">From/Night</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://picsum.photos/400/300"
+            onmouseover="this.src='images.jfif'"
+            onmouseout="this.src='https://picsum.photos/400/300'"
+            class="card-img-top"
+            width="400px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">From/Night</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://picsum.photos/400/300"
+            onmouseover="this.src='images.jfif'"
+            onmouseout="this.src='https://picsum.photos/400/300'"
+            class="card-img-top"
+            width="400px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">From/Night</a>
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+              ><i class="fa-solid fa-backward"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link selected" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">4</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">5</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#"
+              ><i class="fa-solid fa-forward"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-5">
+            <div class="col">
+              <i class="fas fa-gem me-3"></i>
+              <h6 class="fw-bold mb-4">DB Summer School</h6>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-youtube"></i>
             </div>
-          
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              All rights reserved. Copyright© 2022 DB Summer School by Grupa A.
+
+            <div class="col">
+              <h6 class="fw-bold mb-4">company</h6>
             </div>
-          </footer>
 
+            <div class="col">
+              <h6 class="fw-bold mb-4">resources</h6>
+            </div>
+            <div class="col">
+              <h6 class="fw-bold mb-4">help & support</h6>
+            </div>
 
+            <div class="col">
+              <h6 class="fw-bold mb-4">legal</h6>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+      <div class="text-center p-4">
+        All right reserved. Copyright © 2022 DB Summer School by Grupa A.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
